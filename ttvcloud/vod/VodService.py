@@ -45,6 +45,8 @@ class VodService(Service):
                                           Credentials('', '', 'vod', 'ap-singapore-1'), 5, 5),
             'us-east-1': ServiceInfo("vod.us-east-1.bytedanceapi.com", {'Accept': 'application/json'},
                                      Credentials('', '', 'vod', 'us-east-1'), 5, 5),
+            'us-east-2': ServiceInfo("vod.us-east-2.bytedanceapi.com", {'Accept': 'application/json'},
+                                     Credentials('', '', 'vod', 'us-east-2'), 5, 5),
         }
         service_info = service_info_map.get(region, None)
         if not service_info:
